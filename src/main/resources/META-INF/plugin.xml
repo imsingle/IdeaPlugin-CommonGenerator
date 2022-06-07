@@ -1,18 +1,25 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.imsingle.settergenerator</id>
-    <name>settergenerator</name>
+    <id>com.github.imsingle.commongenerator</id>
+    <name>CommonGenerator</name>
     <vendor>imsingle</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
+    <depends>com.intellij.modules.java</depends>
+
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.imsingle.settergenerator.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.imsingle.settergenerator.services.MyProjectService"/>
+        <intentionAction>
+            <className>com.github.imsingle.settergenerator.actions.AllSetterWithoutParamGenerator</className>
+        </intentionAction>
+        <intentionAction>
+            <className>com.github.imsingle.settergenerator.actions.AllSetterWithParamGenerator</className>
+        </intentionAction>
+        <intentionAction>
+            <className>com.github.imsingle.settergenerator.actions.NewObjectGenerator</className>
+        </intentionAction>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.imsingle.settergenerator.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
 </idea-plugin>
