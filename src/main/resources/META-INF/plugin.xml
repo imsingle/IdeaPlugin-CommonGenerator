@@ -10,12 +10,6 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <intentionAction>
-            <className>com.github.imsingle.settergenerator.actions.AllSetterWithoutParamGenerator</className>
-        </intentionAction>
-        <intentionAction>
-            <className>com.github.imsingle.settergenerator.actions.AllSetterWithParamGenerator</className>
-        </intentionAction>
-        <intentionAction>
             <className>com.github.imsingle.settergenerator.actions.NewObjectGenerator</className>
         </intentionAction>
     </extensions>

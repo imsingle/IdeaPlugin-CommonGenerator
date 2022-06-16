@@ -26,6 +26,7 @@ class MyPluginTest : BasePlatformTestCase() {
     override fun getTestDataPath() = "src/test/testData/rename"
 
     fun testRename() {
-        myFixture.testRename("foo.xml", "foo_after.xml", "a2")
+        println("AbcdDD".decapitalize())
+//        myFixture.testRename("foo.xml", "foo_after.xml", "a2")
     }
 }
