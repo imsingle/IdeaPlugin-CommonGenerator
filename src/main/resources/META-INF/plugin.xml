@@ -12,6 +12,12 @@
         <intentionAction>
             <className>com.github.imsingle.settergenerator.actions.NewObjectGenerator</className>
         </intentionAction>
+        <intentionAction>
+            <className>com.github.imsingle.settergenerator.actions.AllSetterWithoutParamGenerator</className>
+        </intentionAction>
+        <intentionAction>
+            <className>com.github.imsingle.settergenerator.actions.AllSetterWithParamGenerator</className>
+        </intentionAction>
     </extensions>
 
     <applicationListeners>
